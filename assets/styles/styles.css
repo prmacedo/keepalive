@@ -53,4 +53,14 @@ html {
   font-size: 1rem;
   color: #222222;
   font-weight: 400;
+}
+
+#login {
+  background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+  height: 100vh;
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #E0E0E0;
 }/*# sourceMappingURL=styles.css.map */
