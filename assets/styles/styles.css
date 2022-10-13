@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -75,4 +79,77 @@ html {
 }
 .presentation__text {
   font-size: 1rem;
+}
+
+.form {
+  width: 100%;
+  position: relative;
+}
+.form__title {
+  font-size: 2rem;
+}
+.form__field {
+  width: 100%;
+  position: relative;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+}
+.form__input {
+  font-family: "Mark Pro", sans-serif;
+  font-size: 1rem;
+  color: #E0E0E0;
+  width: calc(100% - 60px);
+  padding: 20px;
+  background-color: #26292C;
+  border: 1px solid #E0E0E0;
+  border-radius: 50px;
+  transition: width 0.3s;
+}
+.form__input:focus {
+  width: 100%;
+  padding-right: 50px;
+  outline: none;
+}
+.form__input--filled {
+  width: 100%;
+  padding-right: 50px;
+}
+.form__input--error {
+  border-color: #E9B425;
+}
+.form__icon {
+  position: absolute;
+  right: 20px;
+}
+.form__button {
+  font-family: "Mark Pro", sans-serif;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+  font-weight: bold;
+  width: 100%;
+  padding: 16px;
+  margin-top: 64px;
+  background: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
+  border: none;
+  border-radius: 50px;
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+  filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
+  cursor: pointer;
+}
+.form__button:hover {
+  background: linear-gradient(90deg, #E62A05 0%, #85220F 100%);
+}
+.form__error {
+  color: #E9B425;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  margin-top: 8px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.form__error--hidden {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */

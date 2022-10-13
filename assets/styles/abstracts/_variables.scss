@@ -4,19 +4,22 @@ $light-gray : #E0E0E0;
 $gray       : #454545;
 $yellow     : #E9B425;
 $red        : #C12D18;
-$light-red  : #C13216 ;
+$light-red  : #C13216;
 $text-color : #222222;
+$input-bg   : #26292C;
 
 // Gradient
-$orange-btn     : linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
-$orange-border  : linear-gradient(132.34deg, #FF2D04 22.57%, #C13216 72.04%);
-$light-bg       : linear-gradient(105.96deg, #FFFFFF 0%, #F0F0F0 97.86%);
-$dark-bg-v      : linear-gradient(180deg, #33383D 0%, #1C1D20 100%);    // Vertical
-$dark-bg-h      : linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);  // Horizontal
+$orange     : linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
+$light-bg   : linear-gradient(105.96deg, #FFFFFF 0%, #F0F0F0 97.86%);
+$dark-bg-v  : linear-gradient(180deg, #33383D 0%, #1C1D20 100%);    // Vertical
+$dark-bg-h  : linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);  // Horizontal
 
 // Shadow
 $drop-shadow  : drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
 $inner-shadow : inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+
+// Hover
+$orange-hover : linear-gradient(90deg, #E62A05 0%, #85220F 100%);
 
 // Font
 $font-family: 'Mark Pro', sans-serif;
