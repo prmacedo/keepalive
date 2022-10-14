@@ -69,7 +69,11 @@
     cursor: pointer;
 
     @include breakpoint(laptop) {
-      margin-top: 120px;
+      margin-top: 72px;
+    }
+
+    @include breakpoint(laptop-large) {
+      margin-top: 96px;
     }
 
     &:hover {

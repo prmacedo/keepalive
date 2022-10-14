@@ -121,7 +121,12 @@ html {
 @media screen and (min-width: 1024px) {
   .presentation {
     text-align: left;
-    margin-bottom: 96px;
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .presentation {
+    margin-bottom: 80px;
   }
 }
 .presentation__title {
@@ -191,7 +196,12 @@ html {
 }
 @media screen and (min-width: 1024px) {
   .form__button {
-    margin-top: 120px;
+    margin-top: 72px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .form__button {
+    margin-top: 96px;
   }
 }
 .form__button:hover {

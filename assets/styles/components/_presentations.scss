@@ -6,7 +6,11 @@
 
   @include breakpoint(laptop) {
     text-align: left;
-    margin-bottom: 96px;
+    margin-bottom: 64px;
+  }
+
+  @include breakpoint(laptop-large) {
+    margin-bottom: 80px;
   }
 
   &__title {
