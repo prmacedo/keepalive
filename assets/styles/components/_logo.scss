@@ -1,0 +1,8 @@
+.logo {
+  grid-area: logo;
+
+  @include breakpoint(laptop) {
+    display: flex;
+    justify-content: center;
+  }
+}

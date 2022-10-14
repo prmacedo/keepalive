@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Compass - Login</title>
+
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="http://fonts.cdnfonts.com/css/mark-pro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+  <main id="login">
+    <div id="login__right">
+      <h1 class="logo"><img src="./assets/img/white-logo.svg" alt="Compasso uol" class="logo__img"></h1>
+    </div>
+
+    <div id="login__left">
+      <div class="presentation">
+        <h2 class="presentation__title">Olá,</h2>
+        <p class="presentation__text">Para continuar navegando de forma segura, efetue o login na rede.</p>
+      </div>
+
+      <form class="form js-form">
+        <h2 class="form__title">Login</h2>
+
+        <div class="form__field">
+          <input type="email" placeholder="Usuário" class="form__input js-inputEmail">
+          <i class="material-symbols-outlined form__icon">person</i>
+        </div>
+
+        <div class="form__field">
+          <input type="password" placeholder="Senha" class="form__input js-inputPass">
+          <i class="material-symbols-outlined form__icon">lock</i>
+        </div>
+
+        <p class="form__error form__error--hidden js-error">
+          Ops, usuário ou senha inválidos
+          <br>
+          Tente novamente!
+        </p>
+
+        <button type="submit" class="form__button">Continuar</button>
+      </form>
+    </div>
+  </main>
+
+  <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+</html>
