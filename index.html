@@ -16,34 +16,38 @@
 </head>
 <body>
   <main id="login">
-    <h1 class="logo"><img src="./assets/img/white-logo.svg" alt="Compasso uol" class="logo__img"></h1>
-
-    <div class="presentation">
-      <h2 class="presentation__title">Olá,</h2>
-      <p class="presentation__text">Para continuar navegando de forma segura, efetue o login na rede.</p>
+    <div id="login__right">
+      <h1 class="logo"><img src="./assets/img/white-logo.svg" alt="Compasso uol" class="logo__img"></h1>
     </div>
 
-    <form class="form">
-      <h2 class="form__title">Login</h2>
-
-      <div class="form__field">
-        <input type="email" placeholder="Usuário" class="form__input">
-        <i class="material-symbols-outlined form__icon">person</i>
+    <div id="login__left">
+      <div class="presentation">
+        <h2 class="presentation__title">Olá,</h2>
+        <p class="presentation__text">Para continuar navegando de forma segura, efetue o login na rede.</p>
       </div>
 
-      <div class="form__field">
-        <input type="password" placeholder="Senha" class="form__input">
-        <i class="material-symbols-outlined form__icon">lock</i>
-      </div>
+      <form class="form">
+        <h2 class="form__title">Login</h2>
 
-      <p class="form__error form__error--hidden">
-        Ops, usuário ou senha inválidos
-        <br>
-        Tente novamente!
-      </p>
+        <div class="form__field">
+          <input type="email" placeholder="Usuário" class="form__input">
+          <i class="material-symbols-outlined form__icon">person</i>
+        </div>
 
-      <button type="submit" class="form__button">Continuar</button>
-    </form>
+        <div class="form__field">
+          <input type="password" placeholder="Senha" class="form__input">
+          <i class="material-symbols-outlined form__icon">lock</i>
+        </div>
+
+        <p class="form__error form__error--hidden">
+          Ops, usuário ou senha inválidos
+          <br>
+          Tente novamente!
+        </p>
+
+        <button type="submit" class="form__button">Continuar</button>
+      </form>
+    </div>
   </main>
 </body>
 </html>

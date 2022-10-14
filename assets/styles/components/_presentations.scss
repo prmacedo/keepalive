@@ -1,6 +1,13 @@
 .presentation {
+  grid-area: presentation;
+
   text-align: center;
   margin: 56px 0 40px;
+
+  @include breakpoint(laptop) {
+    text-align: left;
+    margin-bottom: 96px;
+  }
 
   &__title {
     font-size: 3.75rem;

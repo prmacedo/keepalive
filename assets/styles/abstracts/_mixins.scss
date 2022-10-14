@@ -5,3 +5,11 @@
   @if $weight { font-weight: $weight; }
   @if $lh { line-height: $lh; }
 }
+
+@mixin breakpoint($size) {
+  @if($size == laptop) {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+}
