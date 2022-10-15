@@ -95,13 +95,22 @@
     width: 5.625rem;
     height: 100%;
 
+    transition: font-size 0.3s;
     cursor: pointer;
+
+    @include breakpoint(laptop) {
+      width: 130px;
+    }
+
+    &:hover {
+      font-size: 0.8125rem;
+      font-weight: bold;
+    }
 
     &--continue {
       color: $light-red;
       text-decoration: none;
       background-color: $white;
-
     }
 
     &--logout {

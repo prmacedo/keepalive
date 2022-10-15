@@ -226,7 +226,17 @@ html {
   text-align: center;
   width: 5.625rem;
   height: 100%;
+  transition: font-size 0.3s;
   cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .footer__button {
+    width: 130px;
+  }
+}
+.footer__button:hover {
+  font-size: 0.8125rem;
+  font-weight: bold;
 }
 .footer__button--continue {
   color: #C13216;
