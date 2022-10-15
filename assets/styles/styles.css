@@ -110,6 +110,12 @@ html {
   height: 100vh;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 16px;
+}
+
 .logo {
   grid-area: logo;
 }
@@ -231,4 +237,26 @@ html {
 }
 .form__error--hidden {
   display: none;
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "location location" "icon temperature";
+  align-items: center;
+}
+.forecast__location {
+  grid-area: location;
+  justify-self: end;
+  font-size: 0.75rem;
+}
+.forecast__icon {
+  grid-area: icon;
+  justify-self: end;
+  height: 32px;
+}
+.forecast__temperature {
+  grid-area: temperature;
+  font-size: 1.5rem;
+  font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */
