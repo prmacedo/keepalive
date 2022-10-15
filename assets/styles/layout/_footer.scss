@@ -10,6 +10,13 @@
   align-items: center;
   justify-content: space-between;
 
+  @include breakpoint(laptop) {
+    height: 100px;
+
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+  }
+
   &__icon {
     position: absolute;
     top: -40px;
@@ -17,6 +24,10 @@
 
     color: $text-color;
     cursor: pointer;
+
+    @include breakpoint(laptop) {
+      display: none;
+    }
 
     &::before {
       content: "";
@@ -46,10 +57,31 @@
     }
   }
 
+  &__info {
+    display: none;
+
+    @include breakpoint(laptop) {
+      display: block;
+      max-width: 580px;
+
+      justify-self: end;
+
+      font-size: 0.75rem;
+      text-align: right;
+
+      border-right: 1px solid $white;
+      padding: 16px 32px;
+    }
+  }
+
   &__buttonGroup {
     display: flex;
     align-items: center;
     height: 100%;
+
+    @include breakpoint(laptop) {
+      justify-self: end;
+    }
   }
 
   &__button {

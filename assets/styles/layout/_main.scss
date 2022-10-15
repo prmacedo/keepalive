@@ -1,8 +1,16 @@
 .main {
   flex: 1;
 
-  background-image: url(../img/bg-compasso.png);
+  background-image: url(../img/bg-compasso-mobile.png);
   background-repeat: no-repeat;
   background-position-x: -50%;
   background-position-y: 115%;
+
+  @include breakpoint(laptop) {
+    background-image: url(../img/bg-compasso-desktop.png);
+
+    background-size: contain;
+    background-position-x: -420px;
+    background-position-y: 200px;
+  }
 }

@@ -5,16 +5,31 @@
   text-align: right;
   padding: 0 30px;
 
+  @include breakpoint(laptop) {
+    gap: 16px
+  }
+
   // &__text {}
 
   &__english {
-    font-size: 2rem;
-    color: $red;
+    @include font($font-family, 2rem, $red, bold);
+
+    @include breakpoint(laptop) {
+      font-size: 3rem;
+    }
 
     &--mission {
       font-size: 1.5rem;
+
+      @include breakpoint(laptop) {
+        font-size: 2rem;
+      }
     }
   }
 
-  // &__portuguese {}
+  &__portuguese {
+    @include breakpoint(laptop) {
+      font-size: 1.5rem;
+    }
+  }
 }

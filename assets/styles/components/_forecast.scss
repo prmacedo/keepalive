@@ -12,6 +12,10 @@
     justify-self: end;
 
     font-size: 0.75rem;
+
+    @include breakpoint(laptop) {
+      font-size: 0.875rem;
+    }
   }
 
   &__icon {
@@ -19,11 +23,19 @@
     justify-self: end;
 
     height: 32px;
+
+    @include breakpoint(laptop) {
+      height: 48px;
+    }
   }
 
   &__temperature {
     grid-area: temperature;
     font-size: 1.5rem;
     font-weight: bold;
+
+    @include breakpoint(laptop) {
+      font-size: 3rem;
+    }
   }
 }

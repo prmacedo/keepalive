@@ -9,6 +9,12 @@
 
   padding-left: 16px;
 
+  @include breakpoint(laptop) {
+    justify-self: flex-start;
+    margin-left: 25%;
+    padding: 0;
+  }
+
   &__text {
     grid-area: text;
     font-size: 0.75rem;

@@ -116,13 +116,27 @@ html {
   justify-content: space-between;
   padding: 24px 16px;
 }
+@media screen and (min-width: 1024px) {
+  .header {
+    position: absolute;
+    width: 100vw;
+  }
+}
 
 .main {
   flex: 1;
-  background-image: url(../img/bg-compasso.png);
+  background-image: url(../img/bg-compasso-mobile.png);
   background-repeat: no-repeat;
   background-position-x: -50%;
   background-position-y: 115%;
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    background-image: url(../img/bg-compasso-desktop.png);
+    background-size: contain;
+    background-position-x: -420px;
+    background-position-y: 200px;
+  }
 }
 
 .footer {
@@ -134,12 +148,24 @@ html {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (min-width: 1024px) {
+  .footer {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+  }
+}
 .footer__icon {
   position: absolute;
   top: -40px;
   right: 16px;
   color: #222222;
   cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .footer__icon {
+    display: none;
+  }
 }
 .footer__icon::before {
   content: "";
@@ -163,10 +189,29 @@ html {
   padding: 8px 12px;
   border-radius: 8px;
 }
+.footer__info {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .footer__info {
+    display: block;
+    max-width: 580px;
+    justify-self: end;
+    font-size: 0.75rem;
+    text-align: right;
+    border-right: 1px solid #FFFFFF;
+    padding: 16px 32px;
+  }
+}
 .footer__buttonGroup {
   display: flex;
   align-items: center;
   height: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .footer__buttonGroup {
+    justify-self: end;
+  }
 }
 .footer__button {
   display: flex;
@@ -325,24 +370,50 @@ html {
   justify-self: end;
   font-size: 0.75rem;
 }
+@media screen and (min-width: 1024px) {
+  .forecast__location {
+    font-size: 0.875rem;
+  }
+}
 .forecast__icon {
   grid-area: icon;
   justify-self: end;
   height: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .forecast__icon {
+    height: 48px;
+  }
 }
 .forecast__temperature {
   grid-area: temperature;
   font-size: 1.5rem;
   font-weight: bold;
 }
+@media screen and (min-width: 1024px) {
+  .forecast__temperature {
+    font-size: 3rem;
+  }
+}
 
 .clock {
   text-align: center;
   margin-bottom: 24px;
 }
+@media screen and (min-width: 1024px) {
+  .clock {
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+}
 .clock__hour {
   font-size: 4.5rem;
   font-weight: bold;
+}
+@media screen and (min-width: 1024px) {
+  .clock__hour {
+    font-size: 6rem;
+  }
 }
 .clock__day {
   font-size: 0.875rem;
@@ -354,12 +425,34 @@ html {
   text-align: right;
   padding: 0 30px;
 }
+@media screen and (min-width: 1024px) {
+  .content {
+    gap: 16px;
+  }
+}
 .content__english {
+  font-family: "Mark Pro", sans-serif;
   font-size: 2rem;
   color: #C12D18;
+  font-weight: bold;
+}
+@media screen and (min-width: 1024px) {
+  .content__english {
+    font-size: 3rem;
+  }
 }
 .content__english--mission {
   font-size: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .content__english--mission {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content__portuguese {
+    font-size: 1.5rem;
+  }
 }
 
 .counter {
@@ -369,6 +462,13 @@ html {
   -moz-column-gap: 8px;
        column-gap: 8px;
   padding-left: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .counter {
+    justify-self: flex-start;
+    margin-left: 25%;
+    padding: 0;
+  }
 }
 .counter__text {
   grid-area: text;
