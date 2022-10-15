@@ -116,6 +116,14 @@ html {
   padding: 24px 16px;
 }
 
+.main {
+  flex: 1;
+  background-image: url(../img/bg-compasso.png);
+  background-repeat: no-repeat;
+  background-position-x: -50%;
+  background-position-y: 115%;
+}
+
 .logo {
   grid-area: logo;
 }
