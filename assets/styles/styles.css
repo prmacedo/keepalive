@@ -138,6 +138,11 @@ html {
     background-position-y: 200px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .main {
+    background-position-x: -320px;
+  }
+}
 
 .footer {
   position: relative;
@@ -195,7 +200,7 @@ html {
 @media screen and (min-width: 1024px) {
   .footer__info {
     display: block;
-    max-width: 580px;
+    max-width: 600px;
     justify-self: end;
     font-size: 0.75rem;
     text-align: right;
@@ -257,7 +262,7 @@ html {
     margin-bottom: 64px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (min-height: 900px) {
   .presentation {
     margin-bottom: 80px;
   }
@@ -332,7 +337,7 @@ html {
     margin-top: 72px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (min-height: 900px) {
   .form__button {
     margin-top: 96px;
   }
@@ -403,7 +408,7 @@ html {
 @media screen and (min-width: 1024px) {
   .clock {
     margin-top: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 }
 .clock__hour {
@@ -415,9 +420,9 @@ html {
     font-size: 6rem;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (min-height: 900px) {
   .clock__hour {
-    font-size: 9rem;
+    font-size: 8rem;
   }
 }
 .clock__day {
@@ -433,6 +438,12 @@ html {
 @media screen and (min-width: 1024px) {
   .content {
     gap: 16px;
+    padding-right: 64px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .content {
+    padding-right: 120px;
   }
 }
 .content__english {
@@ -446,7 +457,7 @@ html {
     font-size: 3rem;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (min-height: 900px) {
   .content__english {
     font-size: 4rem;
   }
@@ -459,7 +470,7 @@ html {
     font-size: 2rem;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (min-height: 900px) {
   .content__english--mission {
     font-size: 2.25rem;
   }
@@ -491,7 +502,7 @@ html {
   text-align: right;
   align-self: center;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (min-height: 900px) {
   .counter__text {
     font-size: 0.875rem;
   }
@@ -502,7 +513,7 @@ html {
   font-weight: bold;
   text-align: center;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (min-height: 900px) {
   .counter__time {
     font-size: 3rem;
   }
@@ -512,7 +523,7 @@ html {
   font-size: 0.75rem;
   text-align: center;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (min-height: 900px) {
   .counter__seconds {
     font-size: 0.875rem;
   }

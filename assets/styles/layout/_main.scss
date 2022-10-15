@@ -13,4 +13,8 @@
     background-position-x: -420px;
     background-position-y: 200px;
   }
+
+  @include breakpoint(laptop-medium) {
+    background-position-x: -320px;
+  }
 }

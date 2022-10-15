@@ -6,9 +6,13 @@
   padding: 0 30px;
 
   @include breakpoint(laptop) {
-    gap: 16px
+    gap: 16px;
+    padding-right: 64px;
   }
 
+  @include breakpoint(laptop-medium) {
+    padding-right: 120px;
+  }
   // &__text {}
 
   &__english {
