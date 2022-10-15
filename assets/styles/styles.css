@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -122,6 +123,72 @@ html {
   background-repeat: no-repeat;
   background-position-x: -50%;
   background-position-y: 115%;
+}
+
+.footer {
+  position: relative;
+  height: 80px;
+  color: #FFFFFF;
+  background-image: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__icon {
+  position: absolute;
+  top: -40px;
+  right: 16px;
+  color: #222222;
+  cursor: pointer;
+}
+.footer__icon::before {
+  content: "";
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.footer__icon:hover::before {
+  opacity: 1;
+  content: "Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar.";
+  display: inline-block;
+  position: absolute;
+  bottom: 8px;
+  left: -330px;
+  font-family: "Mark Pro", sans-serif;
+  font-size: 0.75rem;
+  color: #FFFFFF;
+  text-align: justify;
+  white-space: break-spaces;
+  background-image: linear-gradient(90.16deg, rgba(51, 56, 61, 0.8) 0%, rgba(28, 29, 32, 0.8) 100%);
+  max-width: 300px;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.footer__buttonGroup {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.footer__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  text-align: center;
+  width: 5.625rem;
+  height: 100%;
+  cursor: pointer;
+}
+.footer__button--continue {
+  color: #C13216;
+  text-decoration: none;
+  background-color: #FFFFFF;
+}
+.footer__button--logout {
+  font-family: "Mark Pro", sans-serif;
+  font-size: 0.75rem;
+  color: #FFFFFF;
+  border: none;
+  background-color: transparent;
 }
 
 .logo {
