@@ -1,0 +1,31 @@
+.counter {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  grid-template-areas:
+  'text time'
+  'text seconds'
+  ;
+  column-gap: 8px;
+
+  padding-left: 16px;
+
+  &__text {
+    grid-area: text;
+    font-size: 0.75rem;
+    text-align: right;
+    align-self: center;
+  }
+
+  &__time {
+    grid-area: time;
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__seconds {
+    grid-area: seconds;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+}
