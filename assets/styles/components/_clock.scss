@@ -1,0 +1,13 @@
+.clock {
+  text-align: center;
+  margin-bottom: 24px;
+
+  &__hour {
+    font-size: 4.5rem;
+    font-weight: bold;
+  }
+
+  &__day {
+    font-size: 0.875rem;
+  }
+}

@@ -259,4 +259,16 @@ html {
   grid-area: temperature;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.clock {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.clock__hour {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+.clock__day {
+  font-size: 0.875rem;
 }/*# sourceMappingURL=styles.css.map */
