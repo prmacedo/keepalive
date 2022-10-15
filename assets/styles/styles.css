@@ -271,4 +271,18 @@ html {
 }
 .clock__day {
   font-size: 0.875rem;
+}
+
+.content {
+  display: grid;
+  gap: 24px;
+  text-align: right;
+  padding: 0 30px;
+}
+.content__english {
+  font-size: 2rem;
+  color: #C12D18;
+}
+.content__english--mission {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=styles.css.map */
