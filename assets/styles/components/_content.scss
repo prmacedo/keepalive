@@ -18,11 +18,19 @@
       font-size: 3rem;
     }
 
+    @include breakpoint(laptop-large) {
+      font-size: 4rem;
+    }
+
     &--mission {
       font-size: 1.5rem;
 
       @include breakpoint(laptop) {
         font-size: 2rem;
+      }
+
+      @include breakpoint(laptop-large) {
+        font-size: 2.25rem;
       }
     }
   }

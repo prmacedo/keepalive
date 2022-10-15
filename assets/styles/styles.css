@@ -415,6 +415,11 @@ html {
     font-size: 6rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .clock__hour {
+    font-size: 9rem;
+  }
+}
 .clock__day {
   font-size: 0.875rem;
 }
@@ -441,12 +446,22 @@ html {
     font-size: 3rem;
   }
 }
+@media screen and (min-width: 1440px) {
+  .content__english {
+    font-size: 4rem;
+  }
+}
 .content__english--mission {
   font-size: 1.5rem;
 }
 @media screen and (min-width: 1024px) {
   .content__english--mission {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .content__english--mission {
+    font-size: 2.25rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -476,14 +491,29 @@ html {
   text-align: right;
   align-self: center;
 }
+@media screen and (min-width: 1440px) {
+  .counter__text {
+    font-size: 0.875rem;
+  }
+}
 .counter__time {
   grid-area: time;
   font-size: 2.25rem;
   font-weight: bold;
   text-align: center;
 }
+@media screen and (min-width: 1440px) {
+  .counter__time {
+    font-size: 3rem;
+  }
+}
 .counter__seconds {
   grid-area: seconds;
   font-size: 0.75rem;
   text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  .counter__seconds {
+    font-size: 0.875rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

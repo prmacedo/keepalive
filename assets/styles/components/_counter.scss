@@ -20,6 +20,10 @@
     font-size: 0.75rem;
     text-align: right;
     align-self: center;
+
+    @include breakpoint(laptop-large) {
+      font-size: 0.875rem;
+    }
   }
 
   &__time {
@@ -27,11 +31,19 @@
     font-size: 2.25rem;
     font-weight: bold;
     text-align: center;
+
+    @include breakpoint(laptop-large) {
+      font-size: 3rem;
+    }
   }
 
   &__seconds {
     grid-area: seconds;
     font-size: 0.75rem;
     text-align: center;
+
+    @include breakpoint(laptop-large) {
+      font-size: 0.875rem;
+    }
   }
 }
