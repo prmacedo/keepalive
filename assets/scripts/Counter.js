@@ -2,7 +2,7 @@ import { Modal } from './Modal.js';
 
 class Counter {
   #counter;
-  #time = 6;
+  #time = 600;
   #startCounter;
   #modal;
 
