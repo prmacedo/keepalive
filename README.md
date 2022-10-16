@@ -10,16 +10,24 @@ Projeto desenvolvido durante a Sprint 04 do Programa de Bolsas da [Compass.uol](
 
 ## Tecnologias utilizadas
 
-* HTML
-* SASS
-* JavaScript
-* Material Icons
+* [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+* [SASS](https://sass-lang.com/)
+* [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+* [Material Icons](https://fonts.google.com/icons)
+* [Tingle.js](https://tingle.robinparisi.com/)
+* [Nominatim](https://nominatim.org/)
+* [Weather Api](https://www.weatherapi.com/)
 
 ## Funcionalidades
 
 * Validar inputs do formulário
 * Autenticar usuário
 * Armazenar dados do usuário no localStorage
+* Temporizador de tempo logado
+* Relógio em tempo real
+* Previsão do tempo
+* Localização atual
+* Logout
 
 ## Usuário válidos
 
