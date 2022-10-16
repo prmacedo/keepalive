@@ -1,3 +1,5 @@
+import { Authentication } from "./Authentication.js";
+
 class Modal {
   #modal;
 
@@ -18,13 +20,8 @@ class Modal {
     const logoutBtn = document.querySelector('.tingle-modal .js-modalLogout');
     const continueBtn = document.querySelector('.tingle-modal .js-modalContinue');
 
-    logoutBtn.addEventListener("click", this.#logout);
+    logoutBtn.addEventListener("click", Authentication.logout);
     continueBtn.addEventListener("click", this.#refresh);
-  }
-
-  #logout() {
-    localStorage.clear();
-    location.href = './'
   }
 
   #refresh() {

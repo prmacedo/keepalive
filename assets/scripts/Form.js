@@ -1,3 +1,5 @@
+import { Authentication } from "./Authentication.js";
+
 class Form {
   #inputs;
   #form;
@@ -58,8 +60,7 @@ class Form {
       if (!userExists) {
         this.#printError();
       } else {
-        localStorage.setItem('user', JSON.stringify(user));
-        alert("Login Efetuado!");
+        Authentication.login(user);
       }
     }
   }
