@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -103,6 +104,153 @@ html {
   }
 }
 
+#home {
+  background-image: linear-gradient(105.96deg, #FFFFFF 0%, #F0F0F0 97.86%);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 16px;
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    position: absolute;
+    width: 100vw;
+  }
+}
+
+.main {
+  flex: 1;
+  background-image: url(../img/bg-compasso-mobile.png);
+  background-repeat: no-repeat;
+  background-position-x: -50%;
+  background-position-y: 115%;
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    background-image: url(../img/bg-compasso-desktop.png);
+    background-size: contain;
+    background-position-x: -420px;
+    background-position-y: 200px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main {
+    background-position-x: -320px;
+  }
+}
+
+.footer {
+  position: relative;
+  height: 80px;
+  color: #FFFFFF;
+  background-image: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+  }
+}
+.footer__icon {
+  position: absolute;
+  top: -40px;
+  right: 16px;
+  color: #222222;
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .footer__icon {
+    display: none;
+  }
+}
+.footer__icon::before {
+  content: "";
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.footer__icon:hover::before {
+  opacity: 1;
+  content: "Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar.";
+  display: inline-block;
+  position: absolute;
+  bottom: 8px;
+  left: -330px;
+  font-family: "Mark Pro", sans-serif;
+  font-size: 0.75rem;
+  color: #FFFFFF;
+  text-align: justify;
+  white-space: break-spaces;
+  background-image: linear-gradient(90.16deg, rgba(51, 56, 61, 0.8) 0%, rgba(28, 29, 32, 0.8) 100%);
+  max-width: 300px;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.footer__info {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .footer__info {
+    display: block;
+    max-width: 600px;
+    justify-self: end;
+    font-size: 0.75rem;
+    text-align: right;
+    border-right: 1px solid #FFFFFF;
+    padding: 16px 32px;
+  }
+}
+.footer__buttonGroup {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .footer__buttonGroup {
+    justify-self: end;
+  }
+}
+.footer__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  text-align: center;
+  width: 5.625rem;
+  height: 100%;
+  transition: font-size 0.3s;
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .footer__button {
+    width: 130px;
+  }
+}
+.footer__button:hover {
+  font-size: 0.8125rem;
+  font-weight: bold;
+}
+.footer__button--continue {
+  color: #C13216;
+  text-decoration: none;
+  background-color: #FFFFFF;
+}
+.footer__button--logout {
+  font-family: "Mark Pro", sans-serif;
+  font-size: 0.75rem;
+  color: #FFFFFF;
+  border: none;
+  background-color: transparent;
+}
+
 .logo {
   grid-area: logo;
 }
@@ -124,7 +272,7 @@ html {
     margin-bottom: 64px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (min-height: 900px) {
   .presentation {
     margin-bottom: 80px;
   }
@@ -199,7 +347,7 @@ html {
     margin-top: 72px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (min-height: 900px) {
   .form__button {
     margin-top: 96px;
   }
@@ -224,4 +372,220 @@ html {
 }
 .form__error--hidden {
   display: none;
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "location location" "icon temperature";
+  align-items: center;
+}
+.forecast__location {
+  grid-area: location;
+  justify-self: end;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 1024px) {
+  .forecast__location {
+    font-size: 0.875rem;
+  }
+}
+.forecast__icon {
+  grid-area: icon;
+  justify-self: end;
+  height: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .forecast__icon {
+    height: 48px;
+  }
+}
+.forecast__temperature {
+  grid-area: temperature;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 1024px) {
+  .forecast__temperature {
+    font-size: 3rem;
+  }
+}
+
+.clock {
+  text-align: center;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .clock {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+.clock__hour {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 1024px) {
+  .clock__hour {
+    font-size: 6rem;
+  }
+}
+@media screen and (min-width: 1440px) and (min-height: 900px) {
+  .clock__hour {
+    font-size: 8rem;
+  }
+}
+.clock__day {
+  font-size: 0.875rem;
+}
+
+.content {
+  display: grid;
+  gap: 24px;
+  text-align: right;
+  padding: 0 30px;
+}
+@media screen and (min-width: 1024px) {
+  .content {
+    gap: 16px;
+    padding-right: 64px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .content {
+    padding-right: 120px;
+  }
+}
+.content__english {
+  font-family: "Mark Pro", sans-serif;
+  font-size: 2rem;
+  color: #C12D18;
+  font-weight: bold;
+}
+@media screen and (min-width: 1024px) {
+  .content__english {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1440px) and (min-height: 900px) {
+  .content__english {
+    font-size: 4rem;
+  }
+}
+.content__english--mission {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .content__english--mission {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1440px) and (min-height: 900px) {
+  .content__english--mission {
+    font-size: 2.25rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content__portuguese {
+    font-size: 1.5rem;
+  }
+}
+
+.counter {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  grid-template-areas: "text time" "text seconds";
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  padding-left: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .counter {
+    justify-self: flex-start;
+    margin-left: 25%;
+    padding: 0;
+  }
+}
+.counter__text {
+  grid-area: text;
+  font-size: 0.75rem;
+  text-align: right;
+  align-self: center;
+}
+@media screen and (min-width: 1440px) and (min-height: 900px) {
+  .counter__text {
+    font-size: 0.875rem;
+  }
+}
+.counter__time {
+  grid-area: time;
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (min-width: 1440px) and (min-height: 900px) {
+  .counter__time {
+    font-size: 3rem;
+  }
+}
+.counter__seconds {
+  grid-area: seconds;
+  font-size: 0.75rem;
+  text-align: center;
+}
+@media screen and (min-width: 1440px) and (min-height: 900px) {
+  .counter__seconds {
+    font-size: 0.875rem;
+  }
+}
+
+.modal {
+  display: none;
+}
+.modal__title {
+  font-size: 2.5rem;
+}
+.modal__text {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+.modal__buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 1rem;
+}
+.modal__button {
+  width: 50%;
+  padding: 1rem 0;
+  font-family: "Mark Pro", sans-serif;
+  font-size: 1rem;
+  color: #222222;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.modal__button--continue {
+  color: #FFFFFF;
+  background: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
+}
+.modal__button--continue:hover {
+  background: linear-gradient(90deg, #E62A05 0%, #85220F 100%);
+}
+.modal__button--logout {
+  border: 2px solid #222222;
+  background: transparent;
+}
+.modal__button--logout:hover {
+  background: #222222;
+  color: #FFFFFF;
+}
+
+.tingle-modal {
+  background: rgba(0, 0, 0, 0.6);
+}
+.tingle-modal-box {
+  width: auto;
 }/*# sourceMappingURL=styles.css.map */

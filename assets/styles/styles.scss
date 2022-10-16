@@ -5,7 +5,19 @@
 @import './base/typography';
 
 @import './pages/login';
+@import './pages/home';
+
+@import './layout/header';
+@import './layout/main';
+@import './layout/footer';
 
 @import './components/logo';
 @import './components/presentations';
 @import './components/form';
+@import './components/forecast';
+@import './components/clock';
+@import './components/content';
+@import './components/counter';
+@import './components/modal';
+
+@import './vendors/tingle';

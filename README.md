@@ -10,16 +10,24 @@ Projeto desenvolvido durante a Sprint 04 do Programa de Bolsas da [Compass.uol](
 
 ## Tecnologias utilizadas
 
-* HTML
-* SASS
-* JavaScript
-* Material Icons
+* [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+* [SASS](https://sass-lang.com/)
+* [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+* [Material Icons](https://fonts.google.com/icons)
+* [Tingle.js](https://tingle.robinparisi.com/)
+* [Nominatim](https://nominatim.org/)
+* [Weather Api](https://www.weatherapi.com/)
 
 ## Funcionalidades
 
 * Validar inputs do formulário
 * Autenticar usuário
 * Armazenar dados do usuário no localStorage
+* Temporizador de tempo logado
+* Relógio em tempo real
+* Previsão do tempo
+* Localização atual
+* Logout
 
 ## Usuário válidos
 
@@ -45,12 +53,10 @@ Projeto desenvolvido durante a Sprint 04 do Programa de Bolsas da [Compass.uol](
 | text-color        | ![#222222](https://via.placeholder.com/10/222222?text=+) #222222 |
 | input-bg          | ![#26292C](https://via.placeholder.com/10/26292C?text=+) #26292C |
 
-| Gradiente         | Direção           | Hexadecimal                                                      | Posição    | Hexadecimal                                                      | Posição    |
-| ----------------- | ----------------: | ---------------------------------------------------------------- | ---------: | ---------------------------------------------------------------- | ---------: |
-| dark-bg-h         | 90.16deg          | ![#33383D](https://via.placeholder.com/10/33383D?text=+) #33383D |         0% | ![#1C1D20](https://via.placeholder.com/10/1C1D20?text=+) #1C1D20 |       100% |
-| dark-bg-v         | 180deg            | ![#33383D](https://via.placeholder.com/10/33383D?text=+) #33383D |         0% | ![#1C1D20](https://via.placeholder.com/10/1C1D20?text=+) #1C1D20 |       100% |
-| light-bg          | 105.96deg         | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF |         0% | ![#F0F0F0](https://via.placeholder.com/10/F0F0F0?text=+) #F0F0F0 |     97.86% |
-| orange-hover      | 90deg             | ![#E62A05](https://via.placeholder.com/10/E62A05?text=+) #E62A05 |         0% | ![#85220F](https://via.placeholder.com/10/85220F?text=+) #85220F |       100% |
-
-
-
+| Gradiente         | Direção           | Hexadecimal                                                                                  | Posição    | Hexadecimal                                                                                  | Posição    |
+| ----------------- | ----------------: | -------------------------------------------------------------------------------------------- | ---------: | -------------------------------------------------------------------------------------------- | ---------: |
+| dark-bg-h         | 90.16deg          | ![#33383D](https://via.placeholder.com/10/33383D?text=+) #33383D                             |         0% | ![#1C1D20](https://via.placeholder.com/10/1C1D20?text=+) #1C1D20                             |       100% |
+| dark-bg-info      | 90.16deg          | ![rgba(51, 56, 61, 0.8)](https://via.placeholder.com/10/33383D?text=+) rgba(51, 56, 61, 0.8) |         0% | ![rgba(28, 29, 32, 0.8)](https://via.placeholder.com/10/1C1D20?text=+) rgba(28, 29, 32, 0.8) |       100% |
+| dark-bg-v         | 180deg            | ![#33383D](https://via.placeholder.com/10/33383D?text=+) #33383D                             |         0% | ![#1C1D20](https://via.placeholder.com/10/1C1D20?text=+) #1C1D20                             |       100% |
+| light-bg          | 105.96deg         | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF                             |         0% | ![#F0F0F0](https://via.placeholder.com/10/F0F0F0?text=+) #F0F0F0                             |     97.86% |
+| orange-hover      | 90deg             | ![#E62A05](https://via.placeholder.com/10/E62A05?text=+) #E62A05                             |         0% | ![#85220F](https://via.placeholder.com/10/85220F?text=+) #85220F                             |       100% |

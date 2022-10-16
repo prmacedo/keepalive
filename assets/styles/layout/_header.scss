@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 16px;
+
+  @include breakpoint(laptop) {
+    position: absolute;
+    width: 100vw;
+  }
+}
