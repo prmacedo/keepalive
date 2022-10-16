@@ -537,4 +537,55 @@ html {
   .counter__seconds {
     font-size: 0.875rem;
   }
+}
+
+.modal {
+  display: none;
+}
+.modal__title {
+  font-size: 2.5rem;
+}
+.modal__text {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+.modal__buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 1rem;
+}
+.modal__button {
+  width: 50%;
+  padding: 1rem 0;
+  font-family: "Mark Pro", sans-serif;
+  font-size: 1rem;
+  color: #222222;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.modal__button--continue {
+  color: #FFFFFF;
+  background: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
+}
+.modal__button--continue:hover {
+  background: linear-gradient(90deg, #E62A05 0%, #85220F 100%);
+}
+.modal__button--logout {
+  border: 2px solid #222222;
+  background: transparent;
+}
+.modal__button--logout:hover {
+  background: #222222;
+  color: #FFFFFF;
+}
+
+.tingle-modal {
+  background: rgba(0, 0, 0, 0.6);
+}
+.tingle-modal-box {
+  width: auto;
 }/*# sourceMappingURL=styles.css.map */

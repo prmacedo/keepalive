@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link href="http://fonts.cdnfonts.com/css/mark-pro" rel="stylesheet">
 
+  <link rel="stylesheet" href="./assets/styles/vendors/tingle.min.css">
   <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body id="home">
@@ -71,6 +72,18 @@
     </div>
   </footer>
 
+  <div class="modal js-modal">
+    <h2 class="modal__title">Sessão expirada</h2>
+
+    <p class="modal__text">Deseja continuar conectado?</p>
+
+    <div class="modal__buttons">
+      <button type="button" class="modal__button modal__button--logout js-modalLogout">Sair</button>
+      <button type="button" class="modal__button modal__button--continue js-modalContinue">Continuar</button>
+    </div>
+  </div>
+
+  <script src="./assets/scripts/vendors/tingle.min.js"></script>
   <script type="module" src="./assets/scripts/main.js"></script>
 </body>
 </html>

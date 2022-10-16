@@ -1,0 +1,52 @@
+.modal {
+  display: none;
+
+  &__title {
+    font-size: 2.5rem;
+  }
+
+  &__text {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    margin-top: 1rem;
+  }
+
+  &__button {
+    width: 50%;
+    padding: 1rem 0;
+
+    @include font($font-family, 1rem, $text-color, bold);
+
+    border: none;
+    border-radius: 8px;
+
+    transition: 0.3s;
+    cursor: pointer;
+
+    &--continue {
+      color: $white;
+      background: $orange;
+
+      &:hover {
+        background: $orange-hover;
+      }
+    }
+
+    &--logout {
+      border: 2px solid $text-color;
+      background: transparent;
+
+      &:hover {
+        background: $text-color;
+        color: $white;
+      }
+    }
+  }
+}

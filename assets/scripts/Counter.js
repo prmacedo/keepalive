@@ -1,19 +1,23 @@
+import { Modal } from './Modal.js';
+
 class Counter {
   #counter;
   #time = 6;
   #startCounter;
+  #modal;
 
   constructor() {
     this.#counter = document.querySelector('.js-counter');
     this.#counter.textContent = this.#time;
+
+    this.#modal = new Modal();
 
     this.#startCounter = setInterval(this.#updateCounter, 1000);
   }
 
   #updateCounter = () => {
     if (this.#hasTimedOut()) {
-      console.log('Timeout');
-
+      this.#modal.open();
       clearInterval(this.#startCounter);
     } else {
       this.#counter.textContent = Number(this.#counter.textContent) - 1;
