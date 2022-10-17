@@ -42,21 +42,21 @@ Projeto desenvolvido durante a Sprint 04 do Programa de Bolsas da [Compass.uol](
 
 ## Documentação de cores
 
-| Cor               | Hexadecimal                                                      |
-| ----------------- | ---------------------------------------------------------------- |
-| white             | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF |
-| light-gray        | ![#E0E0E0](https://via.placeholder.com/10/E0E0E0?text=+) #E0E0E0 |
-| gray              | ![#454545](https://via.placeholder.com/10/454545?text=+) #454545 |
-| yellow            | ![#E9B425](https://via.placeholder.com/10/E9B425?text=+) #E9B425 |
-| red               | ![#C12D18](https://via.placeholder.com/10/C12D18?text=+) #C12D18 |
-| light-red         | ![#C13216](https://via.placeholder.com/10/C13216?text=+) #C13216 |
-| text-color        | ![#222222](https://via.placeholder.com/10/222222?text=+) #222222 |
-| input-bg          | ![#26292C](https://via.placeholder.com/10/26292C?text=+) #26292C |
+| Cor               | Hexadecimal                                                          |
+| ----------------- | -------------------------------------------------------------------- |
+| white             | ![#FFFFFF](https://via.placeholder.com/15/FFFFFF/FFFFFF.png) #FFFFFF |
+| light-gray        | ![#E0E0E0](https://via.placeholder.com/15/E0E0E0/E0E0E0.png) #E0E0E0 |
+| gray              | ![#454545](https://via.placeholder.com/15/454545/454545.png) #454545 |
+| yellow            | ![#E9B425](https://via.placeholder.com/15/E9B425/E9B425.png) #E9B425 |
+| red               | ![#C12D18](https://via.placeholder.com/15/C12D18/C12D18.png) #C12D18 |
+| light-red         | ![#C13216](https://via.placeholder.com/15/C13216/C13216.png) #C13216 |
+| text-color        | ![#222222](https://via.placeholder.com/15/222222/222222.png) #222222 |
+| input-bg          | ![#26292C](https://via.placeholder.com/15/26292C/26292C.png) #26292C |
 
-| Gradiente         | Direção           | Hexadecimal                                                                                  | Posição    | Hexadecimal                                                                                  | Posição    |
-| ----------------- | ----------------: | -------------------------------------------------------------------------------------------- | ---------: | -------------------------------------------------------------------------------------------- | ---------: |
-| dark-bg-h         | 90.16deg          | ![#33383D](https://via.placeholder.com/10/33383D?text=+) #33383D                             |         0% | ![#1C1D20](https://via.placeholder.com/10/1C1D20?text=+) #1C1D20                             |       100% |
-| dark-bg-info      | 90.16deg          | ![rgba(51, 56, 61, 0.8)](https://via.placeholder.com/10/33383D?text=+) rgba(51, 56, 61, 0.8) |         0% | ![rgba(28, 29, 32, 0.8)](https://via.placeholder.com/10/1C1D20?text=+) rgba(28, 29, 32, 0.8) |       100% |
-| dark-bg-v         | 180deg            | ![#33383D](https://via.placeholder.com/10/33383D?text=+) #33383D                             |         0% | ![#1C1D20](https://via.placeholder.com/10/1C1D20?text=+) #1C1D20                             |       100% |
-| light-bg          | 105.96deg         | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF                             |         0% | ![#F0F0F0](https://via.placeholder.com/10/F0F0F0?text=+) #F0F0F0                             |     97.86% |
-| orange-hover      | 90deg             | ![#E62A05](https://via.placeholder.com/10/E62A05?text=+) #E62A05                             |         0% | ![#85220F](https://via.placeholder.com/10/85220F?text=+) #85220F                             |       100% |
+| Gradiente         | Direção           | Hexadecimal                                                                                      | Posição    | Hexadecimal                                                                                      | Posição    |
+| ----------------- | ----------------: | ------------------------------------------------------------------------------------------------ | ---------: | ------------------------------------------------------------------------------------------------ | ---------: |
+| dark-bg-h         | 90.16deg          | ![#33383D](https://via.placeholder.com/15/33383D/33383D.png) #33383D                             |         0% | ![#1C1D20](https://via.placeholder.com/15/1C1D20/1C1D20.png) #1C1D20                             |       100% |
+| dark-bg-info      | 90.16deg          | ![rgba(51, 56, 61, 0.8)](https://via.placeholder.com/15/33383D/33383D.png) rgba(51, 56, 61, 0.8) |         0% | ![rgba(28, 29, 32, 0.8)](https://via.placeholder.com/15/1C1D20/1C1D20.png) rgba(28, 29, 32, 0.8) |       100% |
+| dark-bg-v         | 180deg            | ![#33383D](https://via.placeholder.com/15/33383D/33383D.png) #33383D                             |         0% | ![#1C1D20](https://via.placeholder.com/15/1C1D20/1C1D20.png) #1C1D20                             |       100% |
+| light-bg          | 105.96deg         | ![#FFFFFF](https://via.placeholder.com/15/FFFFFF/FFFFFF.png) #FFFFFF                             |         0% | ![#F0F0F0](https://via.placeholder.com/15/F0F0F0/F0F0F0.png) #F0F0F0                             |     97.86% |
+| orange-hover      | 90deg             | ![#E62A05](https://via.placeholder.com/15/E62A05/E62A05.png) #E62A05                             |         0% | ![#85220F](https://via.placeholder.com/15/85220F/85220F.png) #85220F                             |       100% |
