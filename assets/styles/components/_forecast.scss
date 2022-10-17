@@ -13,6 +13,10 @@
 
     font-size: 0.75rem;
 
+    @include breakpoint(fold) {
+      font-size: 0.625rem;
+    }
+
     @include breakpoint(laptop) {
       font-size: 0.875rem;
     }
@@ -24,6 +28,10 @@
 
     height: 32px;
 
+    @include breakpoint(fold) {
+      height: 24px;
+    }
+
     @include breakpoint(laptop) {
       height: 48px;
     }
@@ -33,6 +41,10 @@
     grid-area: temperature;
     font-size: 1.5rem;
     font-weight: bold;
+
+    @include breakpoint(fold) {
+      font-size: 1rem;
+    }
 
     @include breakpoint(laptop) {
       font-size: 3rem;

@@ -116,6 +116,11 @@ html {
   justify-content: space-between;
   padding: 24px 16px;
 }
+@media screen and (max-width: 280px) {
+  .header__logo {
+    width: 50%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .header {
     position: absolute;
@@ -194,6 +199,12 @@ html {
   padding: 8px 12px;
   border-radius: 8px;
 }
+@media screen and (max-width: 280px) {
+  .footer__icon:hover::before {
+    max-width: 200px;
+    left: -224px;
+  }
+}
 .footer__info {
   display: none;
 }
@@ -224,10 +235,16 @@ html {
   justify-content: center;
   font-size: 0.75rem;
   text-align: center;
-  width: 5.625rem;
+  width: 90px;
   height: 100%;
   transition: font-size 0.3s;
   cursor: pointer;
+}
+@media screen and (max-width: 280px) {
+  .footer__button {
+    font-size: 0.625rem;
+    width: 70px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .footer__button {
@@ -281,6 +298,11 @@ html {
   font-size: 3.75rem;
   margin-bottom: 24px;
 }
+@media screen and (max-width: 280px) {
+  .presentation__title {
+    font-size: 2.5rem;
+  }
+}
 .presentation__text {
   font-size: 1rem;
 }
@@ -300,6 +322,11 @@ html {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 280px) {
+  .form__field {
+    margin-top: 16px;
+  }
+}
 .form__input {
   font-family: "Mark Pro", sans-serif;
   font-size: 1rem;
@@ -310,6 +337,12 @@ html {
   border: 1px solid #E0E0E0;
   border-radius: 50px;
   transition: width 0.3s;
+}
+@media screen and (max-width: 280px) {
+  .form__input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 .form__input:focus {
   width: 100%;
@@ -385,6 +418,11 @@ html {
   justify-self: end;
   font-size: 0.75rem;
 }
+@media screen and (max-width: 280px) {
+  .forecast__location {
+    font-size: 0.625rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .forecast__location {
     font-size: 0.875rem;
@@ -395,6 +433,11 @@ html {
   justify-self: end;
   height: 32px;
 }
+@media screen and (max-width: 280px) {
+  .forecast__icon {
+    height: 24px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .forecast__icon {
     height: 48px;
@@ -404,6 +447,11 @@ html {
   grid-area: temperature;
   font-size: 1.5rem;
   font-weight: bold;
+}
+@media screen and (max-width: 280px) {
+  .forecast__temperature {
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   .forecast__temperature {
@@ -424,6 +472,11 @@ html {
 .clock__hour {
   font-size: 4.5rem;
   font-weight: bold;
+}
+@media screen and (max-width: 280px) {
+  .clock__hour {
+    font-size: 2.5rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   .clock__hour {
@@ -462,6 +515,11 @@ html {
   color: #C12D18;
   font-weight: bold;
 }
+@media screen and (max-width: 280px) {
+  .content__english {
+    font-size: 1.25rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .content__english {
     font-size: 3rem;
@@ -475,6 +533,11 @@ html {
 .content__english--mission {
   font-size: 1.5rem;
 }
+@media screen and (max-width: 280px) {
+  .content__english--mission {
+    font-size: 1rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .content__english--mission {
     font-size: 2rem;
@@ -483,6 +546,11 @@ html {
 @media screen and (min-width: 1440px) and (min-height: 900px) {
   .content__english--mission {
     font-size: 2.25rem;
+  }
+}
+@media screen and (max-width: 280px) {
+  .content__portuguese {
+    font-size: 0.75rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -499,6 +567,11 @@ html {
        column-gap: 8px;
   padding-left: 16px;
 }
+@media screen and (max-width: 280px) {
+  .counter {
+    grid-template-columns: 1fr 60px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .counter {
     justify-self: flex-start;
@@ -512,6 +585,11 @@ html {
   text-align: right;
   align-self: center;
 }
+@media screen and (max-width: 280px) {
+  .counter__text {
+    font-size: 0.625rem;
+  }
+}
 @media screen and (min-width: 1440px) and (min-height: 900px) {
   .counter__text {
     font-size: 0.875rem;
@@ -523,6 +601,11 @@ html {
   font-weight: bold;
   text-align: center;
 }
+@media screen and (max-width: 280px) {
+  .counter__time {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (min-width: 1440px) and (min-height: 900px) {
   .counter__time {
     font-size: 3rem;
@@ -532,6 +615,11 @@ html {
   grid-area: seconds;
   font-size: 0.75rem;
   text-align: center;
+}
+@media screen and (max-width: 280px) {
+  .counter__seconds {
+    font-size: 0.625rem;
+  }
 }
 @media screen and (min-width: 1440px) and (min-height: 900px) {
   .counter__seconds {
@@ -585,7 +673,20 @@ html {
 
 .tingle-modal {
   background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .tingle-modal-box {
   width: auto;
+  margin: 0 8px;
+  border-radius: 8px;
+}
+.tingle-modal-box__content {
+  padding: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .tingle-modal-box__content {
+    padding: 3rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

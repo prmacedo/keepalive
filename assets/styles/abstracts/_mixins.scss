@@ -7,7 +7,12 @@
 }
 
 @mixin breakpoint($size) {
-  @if($size == laptop) {
+  @if($size == fold) {
+    @media screen and (max-width: 280px) {
+      @content;
+    }
+  }
+  @else if($size == laptop) {
     @media screen and (min-width: 1024px) {
       @content;
     }

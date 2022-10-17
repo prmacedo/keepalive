@@ -11,6 +11,10 @@
     font-size: 4.5rem;
     font-weight: bold;
 
+    @include breakpoint(fold) {
+      font-size: 2.5rem;
+    }
+
     @include breakpoint(laptop) {
       font-size: 6rem;
     }
