@@ -54,6 +54,11 @@
       max-width: 300px;
       padding: 8px 12px;
       border-radius: 8px;
+
+      @include breakpoint(fold) {
+        max-width: 200px;
+        left: -224px;
+      }
     }
   }
 
@@ -92,11 +97,16 @@
     font-size: 0.75rem;
     text-align: center;
 
-    width: 5.625rem;
+    width: 90px;
     height: 100%;
 
     transition: font-size 0.3s;
     cursor: pointer;
+
+    @include breakpoint(fold) {
+      font-size: 0.625rem;
+      width: 70px;
+    }
 
     @include breakpoint(laptop) {
       width: 130px;

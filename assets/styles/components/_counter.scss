@@ -9,6 +9,10 @@
 
   padding-left: 16px;
 
+  @include breakpoint(fold) {
+    grid-template-columns: 1fr 60px;
+  }
+
   @include breakpoint(laptop) {
     justify-self: flex-start;
     margin-left: 25%;
@@ -21,6 +25,10 @@
     text-align: right;
     align-self: center;
 
+    @include breakpoint(fold) {
+      font-size: 0.625rem;
+    }
+
     @include breakpoint(laptop-large) {
       font-size: 0.875rem;
     }
@@ -32,6 +40,10 @@
     font-weight: bold;
     text-align: center;
 
+    @include breakpoint(fold) {
+      font-size: 1.5rem;
+    }
+
     @include breakpoint(laptop-large) {
       font-size: 3rem;
     }
@@ -41,6 +53,10 @@
     grid-area: seconds;
     font-size: 0.75rem;
     text-align: center;
+
+    @include breakpoint(fold) {
+      font-size: 0.625rem;
+    }
 
     @include breakpoint(laptop-large) {
       font-size: 0.875rem;

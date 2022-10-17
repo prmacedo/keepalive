@@ -18,6 +18,10 @@
   &__english {
     @include font($font-family, 2rem, $red, bold);
 
+    @include breakpoint(fold) {
+      font-size: 1.25rem;
+    }
+
     @include breakpoint(laptop) {
       font-size: 3rem;
     }
@@ -28,6 +32,10 @@
 
     &--mission {
       font-size: 1.5rem;
+
+      @include breakpoint(fold) {
+        font-size: 1rem;
+      }
 
       @include breakpoint(laptop) {
         font-size: 2rem;
@@ -40,6 +48,10 @@
   }
 
   &__portuguese {
+    @include breakpoint(fold) {
+      font-size: 0.75rem;
+    }
+
     @include breakpoint(laptop) {
       font-size: 1.5rem;
     }
