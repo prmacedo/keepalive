@@ -3,25 +3,31 @@ import { Authentication } from "./Authentication.js";
 class Modal {
   #modal;
 
-  constructor() {
+  constructor(closeMethods = []) {
     this.#modal = new tingle.modal({
-      closeMethods: []
+      closeMethods: [...closeMethods]
     });
   }
 
-  open() {
+  open(modal) {
     this.#modal.open();
-    this.#modal.setContent(document.querySelector('.js-modal').innerHTML);
+    this.#modal.setContent(document.querySelector(modal).innerHTML);
 
     this.#addEvents();
   }
 
   #addEvents() {
-    const logoutBtn = document.querySelector('.tingle-modal .js-modalLogout');
-    const continueBtn = document.querySelector('.tingle-modal .js-modalContinue');
+    const counterLogout = document.querySelector('.tingle-modal .js-counterLogout');
+    const counterContinue = document.querySelector('.tingle-modal .js-counterContinue');
 
-    logoutBtn.addEventListener("click", Authentication.logout);
-    continueBtn.addEventListener("click", this.#refresh);
+    const logoutClear = document.querySelector('.tingle-modal .js-logoutClear');
+    const logoutRemember = document.querySelector('.tingle-modal .js-logoutRemember');
+
+    counterLogout?.addEventListener("click", Authentication.logout);
+    counterContinue?.addEventListener("click", this.#refresh);
+
+    logoutClear?.addEventListener("click", Authentication.logout);
+    logoutRemember?.addEventListener("click", Authentication.rememberDataAndLogout);
   }
 
   #refresh() {

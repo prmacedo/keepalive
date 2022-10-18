@@ -4,7 +4,8 @@ class Authentication {
   }
 
   static authenticate(path) {
-    const isLoggedIn = localStorage.getItem('user');
+    const data = JSON.parse(localStorage.getItem('data'));
+    const isLoggedIn = data?.isLoggedIn || false;
 
     if (path !== '/' && path !== 'index.html') {
       if (!isLoggedIn) {
@@ -18,12 +19,28 @@ class Authentication {
   }
 
   static login(user) {
-    localStorage.setItem('user', JSON.stringify(user));
+    const data = {
+      isLoggedIn: true,
+      user
+    }
+
+    localStorage.setItem('data', JSON.stringify(data));
     location.href = './home.html';
   }
 
   static logout() {
     localStorage.clear();
+    location.href = './';
+  }
+
+  static rememberDataAndLogout() {
+    const { user } = JSON.parse(localStorage.getItem('data'));
+    const data = {
+      isLoggedIn: false,
+      user
+    }
+
+    localStorage.setItem('data', JSON.stringify(data));
     location.href = './';
   }
 }

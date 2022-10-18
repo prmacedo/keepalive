@@ -17,7 +17,7 @@ class Counter {
 
   #updateCounter = () => {
     if (this.#hasTimedOut()) {
-      this.#modal.open();
+      this.#modal.open('.js-counterModal');
       clearInterval(this.#startCounter);
     } else {
       this.#counter.textContent = Number(this.#counter.textContent) - 1;

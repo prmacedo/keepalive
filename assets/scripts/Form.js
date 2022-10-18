@@ -14,7 +14,18 @@ class Form {
     this.#form = document.querySelector(".js-form");
     this.#error = document.querySelector(".js-error");
 
+    this.#init();
     this.#addEvents();
+  }
+
+  #init() {
+    const data = JSON.parse(localStorage.getItem('data'));
+    const user = data?.user || { email: '', password: '' };
+
+    const [ email, password ] = this.#inputs;
+
+    email.value = user.email;
+    password.value = user.password;
   }
 
   #addEvents() {

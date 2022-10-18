@@ -72,14 +72,25 @@
     </div>
   </footer>
 
-  <div class="modal js-modal">
+  <div class="modal js-counterModal">
     <h2 class="modal__title">Sessão expirada</h2>
 
     <p class="modal__text">Deseja continuar conectado?</p>
 
     <div class="modal__buttons">
-      <button type="button" class="modal__button modal__button--logout js-modalLogout">Sair</button>
-      <button type="button" class="modal__button modal__button--continue js-modalContinue">Continuar</button>
+      <button type="button" class="modal__button modal__button--logout js-counterLogout">Sair</button>
+      <button type="button" class="modal__button modal__button--continue js-counterContinue">Continuar</button>
+    </div>
+  </div>
+
+  <div class="modal js-logoutModal">
+    <h2 class="modal__title">Logout</h2>
+
+    <p class="modal__text">Deseja salvar os dados para o próximo login?</p>
+
+    <div class="modal__buttons">
+      <button type="button" class="modal__button modal__button--logout js-logoutClear">Sair</button>
+      <button type="button" class="modal__button modal__button--continue js-logoutRemember">Salvar e sair</button>
     </div>
   </div>
 
