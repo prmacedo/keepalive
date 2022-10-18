@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 16px;
+
+  &__logo {
+    @include breakpoint(fold) {
+      width: 50%;
+    }
+  }
+
+  @include breakpoint(laptop) {
+    position: absolute;
+    width: 100vw;
+  }
+}

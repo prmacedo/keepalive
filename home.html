@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Compass - Home</title>
+
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="http://fonts.cdnfonts.com/css/mark-pro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/styles/vendors/tingle.min.css">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body id="home">
+  <header class="header">
+    <img src="./assets/img/dark-logo.svg" alt="Compasso UOL" class="header__logo">
+    <div class="forecast">
+      <p class="forecast__location js-location">Riachão do Jacuípe - BA</p>
+
+      <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Ícone da previsão" class="forecast__icon js-forecastIcon">
+      <span class="forecast__temperature js-temperature">26°</span>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="clock">
+      <time class="clock__hour js-hour">11:26</time>
+      <div class="clock__day js-day">terça-feira, 17 de março de 2022</div>
+    </div>
+
+    <div class="content">
+      <div class="content__text">
+        <p class="content__english content__english--mission">Our mission is</p>
+        <p class="content__portuguese">Nossa missão é</p>
+      </div>
+
+      <div class="content__text">
+        <p class="content__english">to transform the world</p>
+        <p class="content__portuguese">transformar o mundo</p>
+      </div>
+
+      <div class="content__text">
+        <p class="content__english">building digital experiences</p>
+        <p class="content__portuguese">construindo experiências digitais</p>
+      </div>
+
+      <div class="content__text">
+        <p class="content__english">that enable our client's growth</p>
+        <p class="content__portuguese">que permitam o crescimento dos nossos clientes</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <i class="material-symbols-outlined footer__icon">info</i>
+
+    <p class="footer__info">Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar.</p>
+
+    <div class="counter">
+      <p class="counter__text">Application<br>refresh in</p>
+      <p class="counter__time js-counter">600</p>
+      <p class="counter__seconds">seconds</p>
+    </div>
+
+    <div class="footer__buttonGroup">
+      <a href="https://www.uol.com.br/" class="footer__button footer__button--continue">Continuar<br>Navegando</a>
+      <button class="footer__button footer__button--logout js-buttonLogout">Logout</button>
+    </div>
+  </footer>
+
+  <div class="modal js-counterModal">
+    <h2 class="modal__title">Sessão expirada</h2>
+
+    <p class="modal__text">Deseja continuar conectado?</p>
+
+    <div class="modal__buttons">
+      <button type="button" class="modal__button modal__button--logout js-counterLogout">Sair</button>
+      <button type="button" class="modal__button modal__button--continue js-counterContinue">Continuar</button>
+    </div>
+  </div>
+
+  <div class="modal js-logoutModal">
+    <h2 class="modal__title">Logout</h2>
+
+    <p class="modal__text">Deseja salvar os dados para o próximo login?</p>
+
+    <div class="modal__buttons">
+      <button type="button" class="modal__button modal__button--logout js-logoutClear">Sair</button>
+      <button type="button" class="modal__button modal__button--continue js-logoutRemember">Salvar e sair</button>
+    </div>
+  </div>
+
+  <script src="./assets/scripts/vendors/tingle.min.js"></script>
+  <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+</html>

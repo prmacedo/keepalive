@@ -1,0 +1,50 @@
+#login {
+  background: $dark-bg-v;
+  height: 100vh;
+  padding: 40px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: $light-gray;
+
+  @include breakpoint(laptop) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'left right';
+
+    padding: 0;
+  }
+
+  &__left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include breakpoint(laptop) {
+      justify-content: space-around;
+
+      grid-area: left;
+
+      max-width: 380px;
+      margin: 0 auto;
+    }
+  }
+
+  &__right {
+    @include breakpoint(laptop) {
+      grid-area: right;
+      padding-top: 32px;
+
+      height: 100%;
+      width: 100%;
+
+      background-image: url(../img/background.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}

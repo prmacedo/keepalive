@@ -1,0 +1,53 @@
+.forecast {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    'location location'
+    'icon temperature'
+  ;
+  align-items: center;
+
+  &__location {
+    grid-area: location;
+    justify-self: end;
+
+    font-size: 0.75rem;
+
+    @include breakpoint(fold) {
+      font-size: 0.625rem;
+    }
+
+    @include breakpoint(laptop) {
+      font-size: 0.875rem;
+    }
+  }
+
+  &__icon {
+    grid-area: icon;
+    justify-self: end;
+
+    height: 32px;
+
+    @include breakpoint(fold) {
+      height: 24px;
+    }
+
+    @include breakpoint(laptop) {
+      height: 48px;
+    }
+  }
+
+  &__temperature {
+    grid-area: temperature;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    @include breakpoint(fold) {
+      font-size: 1rem;
+    }
+
+    @include breakpoint(laptop) {
+      font-size: 3rem;
+    }
+  }
+}

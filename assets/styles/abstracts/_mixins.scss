@@ -1,0 +1,30 @@
+@mixin font($family: false, $size: false, $color: false, $weight: false, $lh: false) {
+  @if $family { font-family: $family; }
+  @if $size { font-size: $size; }
+  @if $color { color: $color; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+
+@mixin breakpoint($size) {
+  @if($size == fold) {
+    @media screen and (max-width: 280px) {
+      @content;
+    }
+  }
+  @else if($size == laptop) {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+  @else if($size == laptop-medium) {
+    @media screen and (min-width: 1280px) {
+      @content;
+    }
+  }
+  @else if($size == laptop-large) {
+    @media screen and (min-width: 1440px) and (min-height: 900px) {
+      @content;
+    }
+  }
+}

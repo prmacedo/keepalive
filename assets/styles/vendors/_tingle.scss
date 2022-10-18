@@ -1,0 +1,21 @@
+.tingle-modal {
+  background: rgba(0,0,0,.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-box {
+    width: auto;
+    margin: 0 8px;
+    border-radius: 8px;
+
+    &__content {
+      padding: 1.5rem;
+
+      @include breakpoint(laptop) {
+        padding: 3rem;
+      }
+    }
+  }
+}

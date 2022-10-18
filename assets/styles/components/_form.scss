@@ -1,0 +1,113 @@
+.form {
+  grid-area: form;
+
+  width: 100%;
+  position: relative;
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__field {
+    width: 100%;
+    position: relative;
+
+    margin-top: 32px;
+
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(fold) {
+      margin-top: 16px;
+    }
+  }
+
+  &__input {
+    @include font($font-family, 1rem, $light-gray);
+
+    width: calc(100% - 60px);
+    padding: 20px;
+
+    background-color: $input-bg;
+    border: 1px solid $light-gray;
+    border-radius: 50px;
+
+    transition: width 0.3s;
+
+    @include breakpoint(fold) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    &:focus {
+      width: 100%;
+      padding-right: 50px;
+      outline: none;
+    }
+
+    &--filled {
+      width: 100%;
+      padding-right: 50px;
+    }
+
+    &--error {
+      border-color: $yellow;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    right: 20px;
+  }
+
+  &__button {
+    @include font($font-family, 1.125rem, $white, bold);
+
+    width: 100%;
+    padding: 16px;
+    margin-top: 64px;
+
+    background: $orange;
+
+    border: none;
+    border-radius: 50px;
+
+    box-shadow: $inner-shadow;
+    filter: $drop-shadow;
+
+    cursor: pointer;
+
+    @include breakpoint(laptop) {
+      margin-top: 72px;
+    }
+
+    @include breakpoint(laptop-large) {
+      margin-top: 96px;
+    }
+
+    &:hover {
+      background: $orange-hover;
+    }
+  }
+
+  &__error {
+    color: $yellow;
+    font-weight: bold;
+    text-align: center;
+
+    width: 100%;
+    margin-top: 8px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include breakpoint(laptop) {
+      margin-top: 28px;
+    }
+
+    &--hidden {
+      display: none;
+    }
+  }
+}

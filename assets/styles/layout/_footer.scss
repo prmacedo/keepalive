@@ -1,0 +1,133 @@
+.footer {
+  position: relative;
+
+  height: 80px;
+
+  color: $white;
+  background-image: $dark-bg-h;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include breakpoint(laptop) {
+    height: 100px;
+
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+  }
+
+  &__icon {
+    position: absolute;
+    top: -40px;
+    right: 16px;
+
+    color: $text-color;
+    cursor: pointer;
+
+    @include breakpoint(laptop) {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    &:hover::before {
+      opacity: 1;
+
+      content: "Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo plano e abra uma nova janela para continuar a navegar.";
+
+      display: inline-block;
+
+      position: absolute;
+      bottom: 8px;
+      left: -330px; // -(width + icon + margin-right)
+
+      @include font($font-family, 0.75rem, $white);
+      text-align: justify;
+      white-space: break-spaces;
+
+      background-image: $dark-bg-info;
+      max-width: 300px;
+      padding: 8px 12px;
+      border-radius: 8px;
+
+      @include breakpoint(fold) {
+        max-width: 200px;
+        left: -224px;
+      }
+    }
+  }
+
+  &__info {
+    display: none;
+
+    @include breakpoint(laptop) {
+      display: block;
+      max-width: 600px;
+
+      justify-self: end;
+
+      font-size: 0.75rem;
+      text-align: right;
+
+      border-right: 1px solid $white;
+      padding: 16px 32px;
+    }
+  }
+
+  &__buttonGroup {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    @include breakpoint(laptop) {
+      justify-self: end;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0.75rem;
+    text-align: center;
+
+    width: 90px;
+    height: 100%;
+
+    transition: font-size 0.3s;
+    cursor: pointer;
+
+    @include breakpoint(fold) {
+      font-size: 0.625rem;
+      width: 70px;
+    }
+
+    @include breakpoint(laptop) {
+      width: 130px;
+    }
+
+    &:hover {
+      font-size: 0.8125rem;
+      font-weight: bold;
+    }
+
+    &--continue {
+      color: $light-red;
+      text-decoration: none;
+      background-color: $white;
+    }
+
+    &--logout {
+      @include font($font-family, 0.75rem, $white);
+
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
